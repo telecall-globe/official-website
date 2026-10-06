@@ -7,8 +7,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative w-full overflow-hidden bg-gradient-to-br from-[#3B5B78] to-[#2B3A67] text-white">
-      {/* Background Watermark */}
+    <footer className="relative w-full overflow-hidden bg-linear-to-br from-[#3B5B78] to-[#2B3A67] text-white">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -bottom-10 sm:-bottom-20 left-1/2 -translate-x-1/2 select-none whitespace-nowrap text-[120px] font-bold tracking-tight text-white/[0.025] sm:text-[160px] lg:text-[200px]"
@@ -17,9 +16,7 @@ export default function Footer() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        {/* Main Footer Content */}
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-5 lg:gap-10">
-          {/* Logo / About */}
           <div>
             <Link href="/" className="inline-flex">
               <Image
@@ -27,7 +24,7 @@ export default function Footer() {
                 alt="Telecall Globe Logo"
                 width={200}
                 height={200}
-                className="h-auto w-[180px]"
+                className="h-auto w-45"
               />
             </Link>
 
@@ -37,7 +34,6 @@ export default function Footer() {
             </p> */}
           </div>
 
-          {/* Company */}
           <div>
             <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.15em] text-gray-300">
               Company
@@ -73,7 +69,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Services */}
           <div>
             <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.15em] text-gray-300">
               Services
@@ -109,7 +104,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Legal + Connect */}
           <div>
             <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.15em] text-gray-300">
               Legal
@@ -136,7 +130,6 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            {/* Connect */}
             <div className="mt-0">
               <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.15em] text-gray-300">
                 Connect
@@ -164,7 +157,6 @@ export default function Footer() {
                 </a>
               </div>
 
-              {/* Social Icons */}
               <div className="mt-5 flex items-center gap-3">
                 <Link
                   href="#"
@@ -194,7 +186,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Section */}
         <div className="mt-16 border-t border-white/10 pt-7 text-center">
           <p className="mx-auto max-w-4xl text-xs leading-5 text-gray-400">
             Licensed by the Nigerian Communications Commission (NCC) to provide
