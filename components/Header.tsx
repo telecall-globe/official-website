@@ -87,17 +87,15 @@ const Header = () => {
 
   return (
     <>
-      {/* Header */}
       <header
         className={`sticky top-0 z-50 w-full border-b border-slate-100 bg-white/95 backdrop-blur-md transition-shadow duration-300 ${
           isScrolled ? "shadow-sm" : ""
         }`}
       >
-        <div className="mx-auto flex h-[78px] max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          {/* Logo */}
+        <div className="mx-auto flex h-19.5 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link
             href="/"
-            className="relative z-[60] flex items-center"
+            className="relative z-60 flex items-center"
             onClick={closeMobileMenu}
           >
             <Image
@@ -105,12 +103,11 @@ const Header = () => {
               alt="Telecall Globe Communications Limited"
               width={213}
               height={65}
-              className="h-auto w-[200px] sm:w-[220px] -ml-6 mb-2"
+              className="h-auto w-50 sm:w-55 -ml-6 mb-2"
               priority
             />
           </Link>
 
-          {/* Desktop Navigation */}
           <nav className="hidden items-center gap-8 md:flex">
             {navLinks.map((link) => (
               <Link
@@ -125,7 +122,6 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Desktop CTA */}
           <div className="hidden md:block">
             <Link
               href="/contact"
@@ -136,13 +132,12 @@ const Header = () => {
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             type="button"
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMobileMenuOpen}
             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
-            className="relative z-[60] flex h-10 w-10 items-center justify-center text-slate-700 md:hidden"
+            className="relative z-60 flex h-10 w-10 items-center justify-center text-slate-700 md:hidden"
           >
             <AnimatePresence mode="wait" initial={false}>
               {isMobileMenuOpen ? (
@@ -171,7 +166,6 @@ const Header = () => {
         </div>
       </header>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
@@ -185,9 +179,8 @@ const Header = () => {
               variants={containerVariants}
               initial="closed"
               animate="open"
-              className="flex h-full flex-col px-6 pb-8 pt-[110px] sm:px-10"
+              className="flex h-full flex-col px-6 pb-8 pt-27.5 sm:px-10"
             >
-              {/* Simple navigation label */}
               <motion.p
                 variants={itemVariants}
                 className="mb-5 text-xs font-medium uppercase tracking-[0.18em] text-[#25447B]"
@@ -195,7 +188,6 @@ const Header = () => {
                 Menu
               </motion.p>
 
-              {/* Navigation Links */}
               <nav className="flex flex-col">
                 {navLinks.map((link) => (
                   <motion.div
@@ -218,7 +210,6 @@ const Header = () => {
                 ))}
               </nav>
 
-              {/* CTA */}
               <motion.div variants={itemVariants} className="mt-auto">
                 <Link
                   href="/contact"
