@@ -5,7 +5,6 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-// --- Animation Variants ---
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
@@ -33,8 +32,8 @@ export function Hero() {
 
   return (
     <section className="relative w-full bg-linear-to-br from-[#3B5B78] to-[#2B3A67] bg-[url('/img/hero-background.png')] bg-cover bg-center bg-blend-overlay text-white overflow-hidden">
-     <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-24 lg:pt-8 lg:pb-32 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-       <motion.div
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-24 lg:pt-8 lg:pb-32 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <motion.div
           initial="hidden"
           animate="visible"
           variants={staggerContainer}
@@ -54,7 +53,7 @@ export function Hero() {
             voice, SMS, and data traffic across borders.
           </motion.p>
 
-         <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
+          <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
             <Link
               href="/services"
               className="cursor-pointer group bg-white text-[#2B3A67] px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition-all duration-300 flex items-center gap-2"
@@ -63,7 +62,7 @@ export function Hero() {
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
 
-           <Link
+            <Link
               href="/contact"
               className="cursor-pointer border border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white/10 transition-all duration-300 hover:scale-[1.02]"
             >
@@ -72,7 +71,6 @@ export function Hero() {
           </motion.div>
         </motion.div>
 
-        {/* Right Side: Hero Graphic */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -90,7 +88,7 @@ export function Hero() {
         </motion.div>
 
         <div className="col-span-full mt-12 lg:mt-16 relative w-full overflow-hidden">
-       <div
+          <div
             className="absolute inset-0 z-20 pointer-events-none"
             style={{
               maskImage:
@@ -100,7 +98,6 @@ export function Hero() {
             }}
           />
 
-          {/* Scrolling Container */}
           <motion.div
             className="flex gap-16 sm:gap-24 items-center w-max"
             animate={{
