@@ -160,13 +160,11 @@ const termsData = [
 export default function TermsPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      {/* Hero Section for the Title */}
       <PageHero
         title="Terms & Conditions"
         subtitle="Governing access to and use of Telecall Globe's platforms and services."
       />
 
-      {/* Main Content Area */}
       <main className="flex-1 w-full bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
           <div className="space-y-12">
