@@ -51,37 +51,24 @@ ${data.fullName}
     >
       <div className="mx-auto max-w-7xl px-0 xl:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12 xl:gap-16">
-          {/* =====================================================
-              LEFT — CONTACT INTRODUCTION
-          ====================================================== */}
           <div className="flex flex-col">
-            {/* Small Label */}
             <div className="mb-5 w-fit rounded-md bg-slate-50 px-2.5 py-1.5">
               <span className="text-[11px] font-bold text-slate-700">
                 Contact Telecall
               </span>
             </div>
 
-            {/* Heading */}
             <h2 className="max-w-md text-4xl font-semibold leading-[1.05] tracking-[-0.03em] text-slate-950 sm:text-[42px]">
               Let&apos;s Talk About Your Connectivity Needs
             </h2>
 
-            {/* Description */}
             <p className="mt-5 max-w-md text-[14px] leading-[1.55] text-slate-700">
               Whether you are looking to establish interconnectivity, access
               regional operator networks, or explore our telecommunications
               connectivity solutions, our team is ready to help.
             </p>
 
-            {/* =====================================================
-                CONTACT INFORMATION CARD
-            ====================================================== */}
-            {/* =====================================================
-    CONTACT INFORMATION
-====================================================== */}
             <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
-              {/* Office Address */}
               <div className="group rounded-xl border border-slate-100 bg-white p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-slate-200 hover:shadow-[0_8px_25px_rgba(15,23,42,0.06)]">
                 <div className="flex items-start gap-3">
                   <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#effcf9] text-[#25447b]">
@@ -101,7 +88,6 @@ ${data.fullName}
                 </div>
               </div>
 
-              {/* Support Line */}
               <div className="group rounded-xl border border-slate-100 bg-white p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-slate-200 hover:shadow-[0_8px_25px_rgba(15,23,42,0.06)]">
                 <div className="flex items-start gap-3">
                   <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#effcf9] text-[#25447b]">
@@ -121,7 +107,6 @@ ${data.fullName}
                 </div>
               </div>
 
-              {/* Contact Email */}
               <div className="group rounded-xl border border-slate-100 bg-white p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-slate-200 hover:shadow-[0_8px_25px_rgba(15,23,42,0.06)]">
                 <div className="flex items-start gap-3">
                   <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#effcf9] text-[#25447b]">
@@ -143,7 +128,6 @@ ${data.fullName}
                 </div>
               </div>
 
-              {/* Information Email */}
               <div className="group rounded-xl border border-slate-100 bg-white p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-slate-200 hover:shadow-[0_8px_25px_rgba(15,23,42,0.06)]">
                 <div className="flex items-start gap-3">
                   <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#effcf9] text-[#25447b]">
@@ -167,14 +151,9 @@ ${data.fullName}
             </div>
           </div>
 
-          {/* =====================================================
-              RIGHT — CONTACT FORM
-          ====================================================== */}
           <div className="lg:pt-1">
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
-              {/* First Row */}
               <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-                {/* Full Name */}
                 <div>
                   <label className="mb-2 block text-[12px] font-medium text-slate-900">
                     Full Name
@@ -183,7 +162,7 @@ ${data.fullName}
                   <input
                     {...register("fullName")}
                     placeholder="Your full name"
-                    className={`h-[35px] w-full rounded-md border bg-white px-3 text-[12px] text-slate-900 outline-none transition-all placeholder:text-slate-400 focus:border-[#2B3A67] focus:ring-1 focus:ring-[#2B3A67]/20 ${
+                    className={`h-8.75 w-full rounded-md border bg-white px-3 text-[12px] text-slate-900 outline-none transition-all placeholder:text-slate-400 focus:border-[#2B3A67] focus:ring-1 focus:ring-[#2B3A67]/20 ${
                       errors.fullName ? "border-red-500" : "border-slate-200"
                     }`}
                   />
@@ -195,7 +174,6 @@ ${data.fullName}
                   )}
                 </div>
 
-                {/* Email */}
                 <div>
                   <label className="mb-2 block text-[12px] font-medium text-slate-900">
                     Email Address
@@ -205,7 +183,7 @@ ${data.fullName}
                     {...register("email")}
                     type="email"
                     placeholder="your@email.com"
-                    className={`h-[35px] w-full rounded-md border bg-white px-3 text-[12px] text-slate-900 outline-none transition-all placeholder:text-slate-400 focus:border-[#2B3A67] focus:ring-1 focus:ring-[#2B3A67]/20 ${
+                    className={`h-8.75 w-full rounded-md border bg-white px-3 text-[12px] text-slate-900 outline-none transition-all placeholder:text-slate-400 focus:border-[#2B3A67] focus:ring-1 focus:ring-[#2B3A67]/20 ${
                       errors.email ? "border-red-500" : "border-slate-200"
                     }`}
                   />
@@ -218,9 +196,7 @@ ${data.fullName}
                 </div>
               </div>
 
-              {/* Second Row */}
               <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-                {/* Company */}
                 <div>
                   <label className="mb-2 block text-[12px] font-medium text-slate-900">
                     Company / Organisation
@@ -229,11 +205,10 @@ ${data.fullName}
                   <input
                     {...register("company")}
                     placeholder="Your company name"
-                    className="h-[35px] w-full rounded-md border border-slate-200 bg-white px-3 text-[12px] text-slate-900 outline-none transition-all placeholder:text-slate-400 focus:border-[#2B3A67] focus:ring-1 focus:ring-[#2B3A67]/20"
+                    className="h-8.75 w-full rounded-md border border-slate-200 bg-white px-3 text-[12px] text-slate-900 outline-none transition-all placeholder:text-slate-400 focus:border-[#2B3A67] focus:ring-1 focus:ring-[#2B3A67]/20"
                   />
                 </div>
 
-                {/* Service */}
                 <div>
                   <label className="mb-2 block text-[12px] font-medium text-slate-900">
                     Service of Interest
@@ -241,7 +216,7 @@ ${data.fullName}
 
                   <select
                     {...register("service")}
-                    className={`h-[35px] w-full rounded-md border bg-white px-3 text-[12px] outline-none transition-all focus:border-[#2B3A67] focus:ring-1 focus:ring-[#2B3A67]/20 ${
+                    className={`h-8.75 w-full rounded-md border bg-white px-3 text-[12px] outline-none transition-all focus:border-[#2B3A67] focus:ring-1 focus:ring-[#2B3A67]/20 ${
                       errors.service ? "border-red-500" : "border-slate-200"
                     } ${errors.service ? "text-red-500" : "text-slate-600"}`}
                   >
@@ -260,7 +235,6 @@ ${data.fullName}
                 </div>
               </div>
 
-              {/* Message */}
               <div>
                 <label className="mb-2 block text-[12px] font-medium text-slate-900">
                   Message
@@ -282,7 +256,6 @@ ${data.fullName}
                 )}
               </div>
 
-              {/* Submit */}
               <button
                 type="submit"
                 disabled={isSubmitting}
