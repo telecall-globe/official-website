@@ -27,7 +27,7 @@ const partnerLogos = [
   { name: "Cedarview", src: "/img/partners/cedarview-white.png" },
 ];
 
-export function Hero() {
+export function HeroSection() {
   const duplicatedLogos = [...partnerLogos, ...partnerLogos];
 
   return (
