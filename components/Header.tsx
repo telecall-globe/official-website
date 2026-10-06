@@ -92,7 +92,7 @@ const Header = () => {
           isScrolled ? "shadow-sm" : ""
         }`}
       >
-        <div className="mx-auto flex h-19.5 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto flex h-19.5 xl:h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link
             href="/"
             className="relative z-60 flex items-center"
@@ -103,7 +103,7 @@ const Header = () => {
               alt="Telecall Globe Communications Limited"
               width={213}
               height={65}
-              className="h-auto w-50 sm:w-55 -ml-6 mb-2"
+              className="h-auto w-50 sm:w-55 -ml-0 sm:-ml-1 mb-.5"
               priority
             />
           </Link>

@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className="relative w-full overflow-hidden bg-linear-to-br from-[#3B5B78] to-[#2B3A67] text-white">
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -bottom-10 sm:-bottom-20 left-1/2 -translate-x-1/2 select-none whitespace-nowrap text-[120px] font-bold tracking-tight text-white/[0.025] sm:text-[160px] lg:text-[200px]"
+        className="pointer-events-none absolute -bottom-10 sm:-bottom-30 left-1/2 -translate-x-1/2 select-none whitespace-nowrap text-[120px] font-bold tracking-tight text-white/2.5 sm:text-[160px] lg:text-[250px]"
       >
         Telecall Globe
       </div>
