@@ -19,14 +19,12 @@ const staggerContainer = {
   },
 };
 
-// --- Placeholder Data ---
-// Replace image paths with your actual assets
 const servicesData = [
   {
     title: "Interconnectivity",
     description:
       "Connect to multiple telecommunications operators through a single interconnection point. Telecall provides the infrastructure and capacity required to route voice, SMS and data traffic across different networks and protocols.",
-    image: "/img/services/interconnectivity.jpg",
+    image: "/img/services/service-interconnect.jpg",
     link: "/services/interconnectivity",
     cta: "Explore Interconnectivity",
   },
@@ -34,7 +32,7 @@ const servicesData = [
     title: "International Data Access",
     description:
       "Telecall provides direct connectivity to Nigerian operators for the termination of international traffic, supporting reliable voice routes and efficient traffic billing and settlement.",
-    image: "/img/services/data-access.jpg",
+    image: "/img/services/service-ida.jpg",
     link: "/services/data",
     cta: "Explore International Data Access",
   },
@@ -42,9 +40,9 @@ const servicesData = [
     title: "Value Added Services (VAS)",
     description:
       "Telecall provides connectivity and aggregation capabilities that help service providers access and deliver value-added telecommunications services through operator networks.",
-    image: "/img/services/vas.jpg",
+    image: "/img/services/service-vas.jpeg",
     link: "/services/value-added",
-    cta: "Explore VAS Aggregation",
+    cta: "Explore VAS",
   },
 ];
 
@@ -52,7 +50,6 @@ export function ServicesSection() {
   return (
     <section className="pb-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header Section */}
         <div className="flex flex-col items-center text-center mb-16">
           <motion.span
             initial="hidden"
@@ -75,7 +72,6 @@ export function ServicesSection() {
           </motion.h2>
         </div>
 
-        {/* Services Grid */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -89,7 +85,6 @@ export function ServicesSection() {
               variants={fadeUp}
               className="bg-[#F8FAFC] rounded-2xl overflow-hidden flex flex-col transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
             >
-              {/* Image Container */}
               <div className="relative h-56 w-full bg-slate-200">
                 <Image
                   src={service.image}
@@ -99,16 +94,14 @@ export function ServicesSection() {
                 />
               </div>
 
-              {/* Content Container */}
-              <div className="p-8 flex flex-col flex-grow">
+              <div className="p-8 flex flex-col grow">
                 <h3 className="text-xl font-bold text-slate-900 mb-4">
                   {service.title}
                 </h3>
-                <p className="text-slate-600 text-sm leading-relaxed mb-8 flex-grow">
+                <p className="text-slate-600 text-sm leading-relaxed mb-8 grow">
                   {service.description}
                 </p>
 
-                {/* Button Link */}
                 <Link
                   href={service.link}
                   className="cursor-pointer group inline-flex items-center justify-center gap-2 border border-[#2B3A67] text-[#2B3A67] px-4 py-2.5 rounded-md text-sm font-medium hover:bg-[#2B3A67] hover:text-white transition-all duration-300 w-fit"
