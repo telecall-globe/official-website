@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/home/HeroSection";
 import { WhoWeAreSection } from "@/components/home/WhoWeAreSection";
 import { ServicesSection } from "@/components/home/ServicesSection";
 import { WhoWeServeSection } from "@/components/home/WhoWeServeSection";
+import { WhyTelecallSection } from "@/components/home/WhyTelecallSection";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <WhoWeAreSection />
       <ServicesSection />
       <WhoWeServeSection />
+      <WhyTelecallSection />
     </div>
   );
 }
