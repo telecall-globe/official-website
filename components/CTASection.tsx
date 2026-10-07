@@ -19,11 +19,11 @@ const staggerContainer = {
 };
 
 interface CTASectionProps {
-  title: React.ReactNode; 
+  title: React.ReactNode;
   description: string;
   buttonText: string;
   buttonLink: string;
-  imageSrc?: string; 
+  imageSrc?: string;
 }
 
 export function CTASection({
@@ -31,17 +31,17 @@ export function CTASection({
   description,
   buttonText,
   buttonLink,
-  imageSrc = "/img/globe.png", 
+  imageSrc = "/img/globe.png",
 }: CTASectionProps) {
   return (
     <section className="w-full py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
-          className="relative max-w-6xl bg-linear-to-r from-[#556795] to-[#49A1B6] rounded-2xl overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-12"
+          className="relative max-w-6xl bg-linear-to-br from-[#556795] to-[#49A1B6] rounded-2xl overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-12"
         >
           <div className="p-8 sm:p-12 lg:p-16 relative z-10 flex-1 max-w-2xl text-center lg:text-left">
             <motion.h2
@@ -84,7 +84,7 @@ export function CTASection({
             />
           </motion.div>
 
-         <div className="absolute top-0 right-0 w-1/2 h-full bg-linear-to-l from-white/5 to-transparent pointer-events-none" />
+          <div className="absolute top-0 right-0 w-1/2 h-full bg-linear-to-l from-white/5 to-transparent pointer-events-none" />
         </motion.div>
       </div>
     </section>
