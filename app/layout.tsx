@@ -1,8 +1,25 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import { Questrial, Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+
+const centuryGothic = localFont({
+  src: [
+    {
+      path: "./fonts/centurygothic.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/centurygothic_bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-century-gothic",
+});
 
 const questrial = Questrial({
   variable: "--font-questrial",
@@ -26,7 +43,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${questrial.variable} ${poppins.variable} h-full antialiased`}
+      className={`${centuryGothic.className} ${questrial.variable} ${poppins.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <Header />

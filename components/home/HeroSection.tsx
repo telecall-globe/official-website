@@ -19,12 +19,12 @@ const staggerContainer = {
 };
 
 const partnerLogos = [
-  { name: "Airtel", src: "/img/partners/airtel-logo.png" },
-  { name: "MTN", src: "/img/partners/mtn_group_logo.png" },
-  { name: "Glo", src: "/img/partners/glo-white.png" },
-  { name: "T2", src: "/img/partners/t2mobile-white.png" },
-  { name: "Big Picture", src: "/img/partners/bigpicture-white.png" },
-  { name: "Cedarview", src: "/img/partners/cedarview-white.png" },
+  { name: "Airtel", src: "/img/partners/white/airtel-logo.png" },
+  { name: "MTN", src: "/img/partners/white/mtn_group_logo.png" },
+  { name: "Glo", src: "/img/partners/white/glo-white.png" },
+  { name: "T2", src: "/img/partners/white/t2mobile-white.png" },
+  { name: "Big Picture", src: "/img/partners/white/bigpicture-white.png" },
+  { name: "Cedarview", src: "/img/partners/white/cedarview-white.png" },
 ];
 
 export function HeroSection() {
