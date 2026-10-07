@@ -38,7 +38,7 @@ export function ServiceFeatureSection({
   children,
 }: ServiceFeatureProps) {
   return (
-    <section id={id} className="py-24 bg-white scroll-mt-20">
+    <section id={id} className="pt-24 bg-white scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"

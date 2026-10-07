@@ -15,14 +15,18 @@ function InfoCard({
   title,
   description,
   icon,
+  color = "#000000",
+  background = "#F2F5FA",
 }: {
   title: string;
   description: string;
   icon?: React.ReactNode;
+  color?: string;
+  background?: string;
 }) {
   return (
-    <div className="bg-[#F8FAFC] p-6 rounded-xl h-full">
-      {icon && <div className="mb-4 text-[#3B5B78]">{icon}</div>}
+    <div className={`bg-[${background}] p-6 rounded-xl h-full`}>
+      {icon && <div className={`mb-4 text-[${color}]`}>{icon}</div>}
       <h3 className="text-lg font-bold text-slate-900 mb-2">{title}</h3>
       <p className="text-slate-600 text-sm leading-relaxed">{description}</p>
     </div>
@@ -58,7 +62,7 @@ const page = () => {
               </p>
             </>
           }
-          imageSrc="/img/services/interconnectivity.jpg"
+          imageSrc="/img/services/mainservice-interconnectivity.avif"
           imageAlt="Network switch with cables"
         >
           {/* Grid Cards for Interconnectivity */}
@@ -79,7 +83,7 @@ const page = () => {
         </ServiceFeatureSection>
 
         {/* 3. Benefits of Interconnectivity Section (The 6-card grid) */}
-        <section className="py-24 bg-white">
+        <section className="pt-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-center mb-16">
               <span className="inline-block bg-slate-100 text-slate-600 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide">
@@ -92,31 +96,43 @@ const page = () => {
                 icon={<Wifi className="w-8 h-8" strokeWidth={1.5} />}
                 title="One Connection, Multiple Networks"
                 description="Connect to multiple operators through a single interconnection point, reducing the complexity of maintaining separate connections."
+                color="#3E9DB3"
+                background="#F4FFFC"
               />
               <InfoCard
                 icon={<Layers className="w-8 h-8" strokeWidth={1.5} />}
                 title="Simplified Operations"
                 description="Maintain and monitor a single connection instead of managing multiple operator connections independently."
+                color="#3E9DB3"
+                background="#F4FFFC"
               />
               <InfoCard
                 icon={<Radio className="w-8 h-8" strokeWidth={1.5} />}
                 title="Flexible Interconnection"
                 description="Support a wide range of interconnection services and protocols, enabling seamless connectivity across voice, SMS, and data traffic."
+                color="#3E9DB3"
+                background="#F4FFFC"
               />
               <InfoCard
                 icon={<FileCheck className="w-8 h-8" strokeWidth={1.5} />}
                 title="Centralized Billing & Settlement"
                 description="Simplify payment and billing reconciliation through a single interconnection partner."
+                color="#3E9DB3"
+                background="#F4FFFC"
               />
               <InfoCard
                 icon={<Headphones className="w-8 h-8" strokeWidth={1.5} />}
                 title="Efficient Dispute Resolution"
                 description="Streamline the resolution of billing and transaction disputes through a centralized relationship."
+                color="#3E9DB3"
+                background="#F4FFFC"
               />
               <InfoCard
                 icon={<Antenna className="w-8 h-8" strokeWidth={1.5} />}
                 title="Reliable Connectivity"
                 description="Infrastructure designed to support dependable interconnection and efficient traffic exchange."
+                color="#3E9DB3"
+                background="#F4FFFC"
               />
             </div>
           </div>
@@ -142,12 +158,12 @@ const page = () => {
               </p>
             </>
           }
-          imageSrc="/img/services/data-access-diagram.jpg"
+          imageSrc="/img/services/mainservice-ida.jpeg"
           imageAlt="ICN VAS Service Architecture Diagram"
           reverse={true} // This flips the layout: Image Left, Text Right
         >
           {/* Grid Cards for Data Access */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <InfoCard
               title="Direct Operator Connectivity"
               description="Establish direct connectivity to Nigerian telecommunications operators through Telecall."
@@ -183,8 +199,8 @@ const page = () => {
           description={
             <>
               <p>
-                Telecall&apos;s VAS Aggregation offering is positioned to support
-                connectivity between value-added service providers and
+                Telecall&apos;s VAS Aggregation offering is positioned to
+                support connectivity between value-added service providers and
                 telecommunications operator networks.
               </p>
               <p>
@@ -194,7 +210,7 @@ const page = () => {
               </p>
             </>
           }
-          imageSrc="/img/services/vas-tower.jpg"
+          imageSrc="/img/services/mainservice-vas.jpg"
           imageAlt="Telecommunications tower in the sky"
         />
       </main>
