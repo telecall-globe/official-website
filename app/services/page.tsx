@@ -25,8 +25,16 @@ function InfoCard({
   background?: string;
 }) {
   return (
-    <div className={`bg-[${background}] p-6 rounded-xl h-full`}>
-      {icon && <div className={`mb-4 text-[${color}]`}>{icon}</div>}
+    <div
+      style={{ backgroundColor: background }}
+      className="p-6 rounded-xl h-full transition-all duration-300 hover:shadow-md"
+    >
+      {icon && (
+        <div style={{ color: color }} className="mb-4">
+          {" "}
+          {icon}
+        </div>
+      )}
       <h3 className="text-lg font-bold text-slate-900 mb-2">{title}</h3>
       <p className="text-slate-600 text-sm leading-relaxed">{description}</p>
     </div>

@@ -80,6 +80,7 @@ export function ServiceFeatureSection({
                 alt={imageAlt}
                 fill
                 className="object-cover"
+                loading = "eager"
               />
             </motion.div>
           )}
