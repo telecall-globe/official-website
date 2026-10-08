@@ -3,12 +3,16 @@ import { CTASection } from "@/components/CTASection";
 import { TeamSection } from "@/components/about/TeamSection";
 import { TrustedPartnerSection } from "@/components/about/TrustedPartnerSection";
 import { AboutStorySection } from "@/components/about/AboutStorySection";
+import { VisionMissionValues } from "@/components/about/VisionMissionValues";
+import { OurRoleSection } from "@/components/about/OurRoleSection";
 
 const page = () => {
   return (
     <div>
       <TrustedPartnerSection />
       <AboutStorySection />
+      <VisionMissionValues />
+      <OurRoleSection />
       <TeamSection />
       <CTASection
         title={<>Let&apos;s Build Better Connection</>}
