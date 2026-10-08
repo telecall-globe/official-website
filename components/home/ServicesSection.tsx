@@ -25,7 +25,7 @@ const servicesData = [
     description:
       "Connect to multiple telecommunications operators through a single interconnection point. Telecall provides the infrastructure and capacity required to route voice, SMS and data traffic across different networks and protocols.",
     image: "/img/services/service-interconnect.jpg",
-    link: "/services/interconnectivity",
+    link: "/services#interconnectivity",
     cta: "Explore Interconnectivity",
   },
   {
@@ -33,7 +33,7 @@ const servicesData = [
     description:
       "Telecall provides direct connectivity to Nigerian operators for the termination of international traffic, supporting reliable voice routes and efficient traffic billing and settlement.",
     image: "/img/services/service-ida.jpg",
-    link: "/services/data",
+    link: "/services#value-added-services",
     cta: "Explore International Data Access",
   },
   {
@@ -41,7 +41,7 @@ const servicesData = [
     description:
       "Telecall provides connectivity and aggregation capabilities that help service providers access and deliver value-added telecommunications services through operator networks.",
     image: "/img/services/service-vas.jpeg",
-    link: "/services/value-added",
+    link: "/services#international-data-access",
     cta: "Explore VAS",
   },
 ];

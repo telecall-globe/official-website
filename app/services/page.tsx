@@ -148,7 +148,7 @@ const page = () => {
 
         {/* 4. Section 02: International Data Access */}
         <ServiceFeatureSection
-          id="data-access"
+          id="international-data-access"
           label="02. International Data Access"
           title="Direct Connectivity to Nigerian Operator Networks"
           description={
@@ -201,7 +201,7 @@ const page = () => {
 
         {/* 5. Section 03: VAS */}
         <ServiceFeatureSection
-          id="vas"
+          id="value-added-services"
           label="03. VAS"
           title="Value Added Serve (VAS)"
           description={

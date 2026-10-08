@@ -1,11 +1,14 @@
 import React from "react";
 import { CTASection } from "@/components/CTASection";
 import { TeamSection } from "@/components/about/TeamSection";
+import { TrustedPartnerSection } from "@/components/about/TrustedPartnerSection";
+import { AboutStorySection } from "@/components/about/AboutStorySection";
 
 const page = () => {
   return (
     <div>
-      <div>About us page</div>
+      <TrustedPartnerSection />
+      <AboutStorySection />
       <TeamSection />
       <CTASection
         title={<>Let&apos;s Build Better Connection</>}
