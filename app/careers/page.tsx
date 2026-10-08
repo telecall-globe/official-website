@@ -1,12 +1,18 @@
 import React from "react";
 import { CTASection } from "@/components/CTASection";
+import { PageHero } from "@/components/PageHero";
+import { LifeAtTelecallSection } from "@/components/careers/LifeAtTelecallSection";
+import { JoinTheTeamSection } from "@/components/careers/JoinTheTeamSection";
 
 const page = () => {
   return (
-    <div>
-      <div>
-        Career Page
-      </div>
+    <div className="flex flex-col min-h-screen bg-white">
+      <PageHero
+        title="Careers at Telecall"
+        subtitle="Join Telecall Globe and help build the interconnection platform that keeps Nigeria's telecommunications networks, and the businesses that rely on them running smoothly"
+      />
+      <LifeAtTelecallSection />
+      <JoinTheTeamSection />
       <CTASection
         title={
           <>
