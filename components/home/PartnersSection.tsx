@@ -3,7 +3,6 @@
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
 
-// --- Animation Variants ---
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
@@ -67,7 +66,6 @@ const row3Logos = [
   { name: "Briclinks", src: "/img/partners/BRICLINKSAFRICAPLC.png" },
 ];
 
-// --- Reusable Marquee Row Component ---
 const MarqueeRow = ({
   logos,
   direction = "left",
@@ -80,7 +78,6 @@ const MarqueeRow = ({
   direction?: "left" | "right";
   duration?: number;
 }) => {
-  // We duplicate the logos (3 times) to ensure there is enough content to fill ultra-wide screens without gaps
   const duplicatedLogos = [...logos, ...logos, ...logos];
 
   return (
@@ -88,30 +85,25 @@ const MarqueeRow = ({
       <motion.div
         className="flex whitespace-nowrap items-center gap-16 sm:gap-24 px-8"
         animate={{
-          // Animate x to -33.33% because we have 3 copies. This creates a perfect seamless loop.
           x: direction === "left" ? ["0%", "-33.33%"] : ["-33.33%", "0%"],
         }}
         transition={{
           repeat: Infinity,
-          ease: "linear", // Linear is crucial for a non-stop smooth ticker
+          ease: "linear",
           duration: duration,
         }}
       >
         {duplicatedLogos.map((logo, index) => (
           <div
             key={index}
-            // Fixed width ensures logos are never squeezed.
-            // shrink-0 prevents them from collapsing.
-            className="shrink-0 flex items-center justify-center w-[120px] sm:w-[160px] h-12 sm:h-16"
+         className="shrink-0 flex items-center justify-center w-30 sm:w-40 h-12 sm:h-16"
           >
             <Image
               src={logo.src}
               alt={`${logo.name} Logo`}
               width={160}
               height={80}
-              // object-contain ensures the logo keeps its aspect ratio
-              // grayscale and opacity make the wall look uniform and clean
-              className="w-full h-full object-contain transition-all duration-300"
+             className="w-full h-full object-contain transition-all duration-300"
             />
           </div>
         ))}
@@ -145,12 +137,7 @@ export function PartnersSection() {
         </motion.p>
       </div>
 
-      {/* Marquee Container */}
       <div className="relative flex flex-col gap-4 sm:gap-8 w-full max-w-[100vw]">
-        {/* 
-          Self-Fading Mask: This uses a CSS mask to fade the entire row at the edges.
-          This makes the logos themselves fade out smoothly instead of being cut off.
-        */}
         <div
           className="absolute inset-0 z-20 pointer-events-none"
           style={{
@@ -161,14 +148,11 @@ export function PartnersSection() {
           }}
         />
 
-        {/* Row 1: Scrolls Left */}
         <MarqueeRow logos={row1Logos} direction="left" duration={100} />
 
-        {/* Row 2: Scrolls Right */}
         <MarqueeRow logos={row2Logos} direction="right" duration={90} />
 
-        {/* Row 3: Scrolls Left */}
-        <MarqueeRow logos={row3Logos} direction="left" duration={100} />
+        <MarqueeRow logos={row3Logos} direction="left" duration={150} />
       </div>
     </section>
   );

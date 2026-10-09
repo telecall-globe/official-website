@@ -3,7 +3,6 @@
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
 
-// --- Animation Variants ---
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
@@ -64,17 +63,11 @@ export function AboutStorySection() {
             </motion.p>
           </div>
 
-          {/* --- Image Container --- */}
-          {/* 
-            - Mobile: Full width, natural height (image dictates the height, no cropping)
-            - Desktop (lg): Locked to a landscape aspect ratio that matches the image
-            - object-contain: Ensures the ENTIRE image is visible (no cropping)
-          */}
           <motion.div
             variants={fadeUp}
             className="order-1 lg:order-2 relative w-full 
-                       aspect-[4/3] 
-                       lg:aspect-[3/2] 
+                       aspect-4/3 
+                       lg:aspect-3/2 
                        rounded-2xl overflow-hidden 
                        bg-slate-100 shadow-sm"
           >

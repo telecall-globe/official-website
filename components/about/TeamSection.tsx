@@ -173,7 +173,7 @@ function TeamMemberCard({ member }: { member: TeamMember }) {
 
 export function TeamSection() {
   return (
-    <section className="py-24 bg-white">
+    <section id="team" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-24">
           <div className="flex flex-col items-center text-center mb-16">

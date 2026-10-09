@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
-// --- Animation Variants ---
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
@@ -25,7 +24,6 @@ const slideVariants = {
   }),
 };
 
-// --- Testimonial Data ---
 const testimonialsData = [
   {
     quote:
@@ -78,13 +76,12 @@ export function TestimonialSection() {
     });
   };
 
-  // Auto-play logic
   useEffect(() => {
     if (!isAutoPlaying) return;
 
     const timer = setInterval(() => {
       paginate(1);
-    }, 6000); // Advances every 6 seconds
+    }, 6000);
 
     return () => clearInterval(timer);
   }, [page, isAutoPlaying]);

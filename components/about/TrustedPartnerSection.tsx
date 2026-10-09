@@ -3,7 +3,6 @@
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
 
-// --- Animation Variants ---
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
@@ -42,7 +41,7 @@ export function TrustedPartnerSection() {
           >
             <div className="relative w-full h-full rounded-xl overflow-hidden">
               <Image
-                src="/img/team/about-us-hero-img.jpg" // Group Image of the Telecall Globe Team
+                src="/img/team/about-us-hero-img.jpg"
                 alt="Telecall Globe Team"
                 fill
                 className="object-cover object-center transition-transform duration-700 hover:scale-105"
@@ -66,7 +65,8 @@ export function TrustedPartnerSection() {
             >
               Telecall Globe Communications Ltd is a wholly Nigerian-owned
               telecommunications company licensed to provide Local Interconnect
-              Exchange and International Data Access (IDA) services.
+              Exchange, International Data Access (IDA) services and Value Added
+              Services (VAS).
             </motion.p>
           </div>
         </motion.div>

@@ -28,8 +28,7 @@ export function LifeAtTelecallSection() {
           variants={staggerContainer}
           className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center"
         >
-          {/* Left Column: Text */}
-          <div className="order-2 lg:order-1">
+         <div className="order-2 lg:order-1">
             <motion.span
               variants={fadeUp}
               className="inline-block bg-slate-100 text-slate-600 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide mb-6"
@@ -63,7 +62,6 @@ export function LifeAtTelecallSection() {
             </motion.div>
           </div>
 
-          {/* Right Column: Image */}
           <motion.div
             variants={fadeUp}
             className="order-1 lg:order-2 relative w-full aspect-4/3 rounded-2xl overflow-hidden bg-slate-100 shadow-sm"

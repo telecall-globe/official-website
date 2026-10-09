@@ -5,7 +5,6 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-// --- Animation Variants ---
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
@@ -33,7 +32,7 @@ const servicesData = [
     description:
       "Telecall provides direct connectivity to Nigerian operators for the termination of international traffic, supporting reliable voice routes and efficient traffic billing and settlement.",
     image: "/img/services/service-ida.jpg",
-    link: "/services#value-added-services",
+    link: "/services#international-data-access",
     cta: "Explore International Data Access",
   },
   {
@@ -41,7 +40,7 @@ const servicesData = [
     description:
       "Telecall provides connectivity and aggregation capabilities that help service providers access and deliver value-added telecommunications services through operator networks.",
     image: "/img/services/service-vas.jpeg",
-    link: "/services#international-data-access",
+    link: "/services#value-added-services",
     cta: "Explore VAS",
   },
 ];

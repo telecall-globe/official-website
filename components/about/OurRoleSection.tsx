@@ -45,7 +45,6 @@ export function OurRoleSection() {
           variants={staggerContainer}
         >
           <div className="flex flex-col lg:flex-row items-start justify-between gap-12 lg:gap-20 mb-16">
-            {/* Left Column: Label & Title */}
             <div className="w-full lg:w-1/2">
               <motion.span
                 variants={fadeUp}

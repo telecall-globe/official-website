@@ -68,7 +68,6 @@ const Header = () => {
     };
   }, []);
 
-  // Prevent background scrolling when mobile menu is open
   useEffect(() => {
     if (isMobileMenuOpen) {
       document.body.style.overflow = "hidden";

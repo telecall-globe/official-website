@@ -18,7 +18,6 @@ const staggerContainer = {
   visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
 };
 
-// --- Core Values Data (icons removed) ---
 const coreValues = [
   {
     title: "Integrity & Transparency",
@@ -52,7 +51,6 @@ const coreValues = [
   },
 ];
 
-// --- Reusable Accordion Item (No Icons) ---
 function AccordionItem({
   value,
   isOpen,
@@ -76,7 +74,6 @@ function AccordionItem({
         className="cursor-pointer w-full flex items-center justify-between p-5 text-left gap-4"
       >
         <div className="flex items-center gap-4">
-          {/* Small brand color square indicator instead of an icon */}
           <div
             className={`w-1 h-6 rounded-full transition-all duration-300 ${
               isOpen
@@ -127,7 +124,6 @@ function AccordionItem({
   );
 }
 
-// --- Main Section Component ---
 export function VisionMissionValues() {
   const [openValue, setOpenValue] = useState<number | null>(0);
 
@@ -137,7 +133,7 @@ export function VisionMissionValues() {
         <div className="mb-24">
           <div className="flex justify-center mb-16">
             <span className="inline-block bg-slate-100 text-slate-600 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide">
-              Vision, Mission
+              Vision and Mission
             </span>
           </div>
 
@@ -148,12 +144,10 @@ export function VisionMissionValues() {
             variants={staggerContainer}
             className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto"
           >
-            {/* Vision Card */}
             <motion.div
               variants={fadeUp}
-              className="relative bg-gradient-to-br from-[#F4FFFC] to-white p-8 rounded-2xl border border-[#556795]/10 overflow-hidden"
+              className="relative bg-linear-to-br from-[#F4FFFC] to-white p-8 rounded-2xl border border-[#556795]/10 overflow-hidden"
             >
-              {/* Large decorative quote mark */}
               <span className="absolute top-4 right-6 text-[120px] leading-none font-serif text-[#556795]/5 select-none pointer-events-none">
                 &rdquo;
               </span>
@@ -174,10 +168,9 @@ export function VisionMissionValues() {
               </div>
             </motion.div>
 
-            {/* Mission Card */}
             <motion.div
               variants={fadeUp}
-              className="relative bg-gradient-to-br from-[#F4FFFC] to-white p-8 rounded-2xl border border-[#556795]/10 overflow-hidden"
+              className="relative bg-linear-to-br from-[#F4FFFC] to-white p-8 rounded-2xl border border-[#556795]/10 overflow-hidden"
             >
               <span className="absolute top-4 right-6 text-[120px] leading-none font-serif text-[#556795]/5 select-none pointer-events-none">
                 &rdquo;
@@ -204,7 +197,6 @@ export function VisionMissionValues() {
           </motion.div>
         </div>
 
-        {/* Core Values Accordion */}
         <div>
           <div className="flex justify-center mb-16">
             <span className="inline-block bg-slate-100 text-slate-600 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide">

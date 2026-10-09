@@ -50,7 +50,6 @@ const page = () => {
       />
 
       <main className="flex-1 w-full bg-white">
-        {/* 2. Section 01: Interconnectivity */}
         <ServiceFeatureSection
           id="interconnectivity"
           label="01. Interconnectivity"
@@ -73,7 +72,6 @@ const page = () => {
           imageSrc="/img/services/mainservice-interconnectivity.avif"
           imageAlt="Network switch with cables"
         >
-          {/* Grid Cards for Interconnectivity */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <InfoCard
               title="Reliable Voice Interconnection"
@@ -90,7 +88,6 @@ const page = () => {
           </div>
         </ServiceFeatureSection>
 
-        {/* 3. Benefits of Interconnectivity Section (The 6-card grid) */}
         <section className="pt-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-center mb-16">
@@ -146,7 +143,6 @@ const page = () => {
           </div>
         </section>
 
-        {/* 4. Section 02: International Data Access */}
         <ServiceFeatureSection
           id="international-data-access"
           label="02. International Data Access"
@@ -168,9 +164,8 @@ const page = () => {
           }
           imageSrc="/img/services/mainservice-ida.jpeg"
           imageAlt="ICN VAS Service Architecture Diagram"
-          reverse={true} // This flips the layout: Image Left, Text Right
+          reverse={true}
         >
-          {/* Grid Cards for Data Access */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <InfoCard
               title="Direct Operator Connectivity"
@@ -199,7 +194,6 @@ const page = () => {
           </div>
         </ServiceFeatureSection>
 
-        {/* 5. Section 03: VAS */}
         <ServiceFeatureSection
           id="value-added-services"
           label="03. VAS"

@@ -10,7 +10,6 @@ import {
   Antenna,
 } from "lucide-react";
 
-// --- Animation Variants ---
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
@@ -24,8 +23,6 @@ const staggerContainer = {
   },
 };
 
-// --- Placeholder Data ---
-// Icons are chosen from lucide-react to closely match your design
 const featuresData = [
   {
     icon: <Wifi className="w-8 h-8 text-[#3B5B78]" strokeWidth={1.5} />,

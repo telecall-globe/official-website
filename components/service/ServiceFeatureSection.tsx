@@ -20,11 +20,11 @@ interface ServiceFeatureProps {
   id: string;
   label: string;
   title: string;
-  description: React.ReactNode; // Allows for multiple paragraphs
+  description: React.ReactNode;
   imageSrc?: string;
   imageAlt?: string;
-  reverse?: boolean; // If true, image goes left, text goes right
-  children?: React.ReactNode; // For the grid cards below the text
+  reverse?: boolean;
+  children?: React.ReactNode;
 }
 
 export function ServiceFeatureSection({
