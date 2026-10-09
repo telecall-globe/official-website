@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "export": "next export"
+    "output": "next export"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.9.1",
