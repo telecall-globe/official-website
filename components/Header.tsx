@@ -102,7 +102,7 @@ const Header = () => {
               alt="Telecall Globe Communications Limited"
               width={213}
               height={65}
-              className="h-auto w-50 sm:w-55 -ml-0 sm:-ml-1 mb-.5"
+              className="h-auto w-50 sm:w-55 ml-0 sm:-ml-1 mb-.5"
               priority
             />
           </Link>
