@@ -64,7 +64,7 @@ export function ServiceFeatureSection({
             </motion.h2>
             <motion.div
               variants={fadeUp}
-              className="space-y-4 text-slate-600 text-base leading-relaxed"
+              className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed"
             >
               {description}
             </motion.div>
