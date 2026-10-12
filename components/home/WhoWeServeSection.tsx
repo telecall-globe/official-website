@@ -71,7 +71,7 @@ export function WhoWeServeSection() {
             variants={fadeUp}
             className="lg:col-span-2 flex items-end-safe h-full pt-2 lg:pt-16"
           >
-            <p className="text-lg text-white/80 max-w-2xl leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg text-white/80 max-w-2xl leading-relaxed">
               Telecall Globe works with telecommunications operators and service
               providers that require reliable connectivity, traffic routing and
               interconnection infrastructure.

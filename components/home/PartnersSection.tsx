@@ -96,14 +96,14 @@ const MarqueeRow = ({
         {duplicatedLogos.map((logo, index) => (
           <div
             key={index}
-         className="shrink-0 flex items-center justify-center w-30 sm:w-40 h-12 sm:h-16"
+            className="shrink-0 flex items-center justify-center w-30 sm:w-40 h-12 sm:h-16"
           >
             <Image
               src={logo.src}
               alt={`${logo.name} Logo`}
               width={160}
               height={80}
-             className="w-full h-full object-contain transition-all duration-300"
+              className="w-full h-full object-contain transition-all duration-300"
             />
           </div>
         ))}
@@ -130,7 +130,7 @@ export function PartnersSection() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeUp}
-          className="text-slate-600 max-w-2xl mx-auto text-lg"
+          className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base md:text-lg"
         >
           Our growing network of clients reflects our role within Nigeria&apos;s
           telecommunications ecosystem.

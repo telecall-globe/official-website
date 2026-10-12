@@ -45,7 +45,7 @@ export function WhoWeAreSection() {
 
             <motion.div
               variants={fadeUp}
-              className="space-y-6 text-slate-600 text-base leading-relaxed mb-8"
+              className="space-y-6 text-slate-600 text-sm sm:text-base leading-relaxed mb-8"
             >
               <p>
                 Telecall Globe Communications Limited is a limited liability
