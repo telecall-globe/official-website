@@ -34,7 +34,7 @@ export function AboutStorySection() {
           <div className="order-2 lg:order-1 space-y-8">
             <motion.p
               variants={fadeUp}
-              className="text-slate-700 text-base sm:text-lg leading-relaxed"
+              className="text-slate-700 text-sm sm:text-base md:text-lg leading-relaxed"
             >
               We were established to solve the two biggest challenges in the
               Nigerian telecom industry: inefficient local interconnection and
@@ -43,7 +43,7 @@ export function AboutStorySection() {
 
             <motion.p
               variants={fadeUp}
-              className="text-slate-700 text-base sm:text-lg leading-relaxed"
+              className="text-slate-700 text-sm sm:text-base md:text-lg leading-relaxed"
             >
               As an Interconnect Clearinghouse, we provide the neutral platform
               where all licensed operators - Mobile Network Operators (MNOs),
@@ -54,7 +54,7 @@ export function AboutStorySection() {
 
             <motion.p
               variants={fadeUp}
-              className="text-slate-700 text-base sm:text-lg leading-relaxed"
+              className="text-slate-700 text-sm sm:text-base md:text-lg leading-relaxed"
             >
               As an International Carrier, we operate as Nigeria&apos;s gateway
               to the world. We terminate high-quality inbound international

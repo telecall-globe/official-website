@@ -65,14 +65,14 @@ export function OurRoleSection() {
               variants={fadeUp}
               className="w-full lg:w-1/2 lg:pt-16 space-y-4"
             >
-              <p className="text-white/90 text-base leading-relaxed">
+              <p className="text-white/90 text-sm sm:text-base leading-relaxed">
                 Telecommunications networks need reliable ways to exchange
                 voice, SMS and data traffic with other networks and service
                 providers. As the number of connections, agreements and
                 transactions increases, managing these relationships can become
                 complex.
               </p>
-              <p className="text-white/90 text-base leading-relaxed">
+              <p className="text-white/90 text-sm sm:text-base leading-relaxed">
                 Telecall provides an interconnection platform that helps
                 simplify this complexity.
               </p>

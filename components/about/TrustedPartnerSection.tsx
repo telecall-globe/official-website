@@ -61,7 +61,7 @@ export function TrustedPartnerSection() {
 
             <motion.p
               variants={fadeUp}
-              className="text-white/90 text-base sm:text-base leading-relaxed text-center lg:text-left lg:pt-2"
+              className="text-white/90 text-sm sm:text-base leading-relaxed text-center lg:text-left lg:pt-2"
             >
               Telecall Globe Communications Ltd is a wholly Nigerian-owned
               telecommunications company licensed to provide Local Interconnect
