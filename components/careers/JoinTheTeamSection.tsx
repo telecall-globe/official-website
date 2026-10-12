@@ -67,7 +67,7 @@ export function JoinTheTeamSection() {
               </motion.h2>
               <motion.p
                 variants={fadeUp}
-                className="text-slate-600 max-w-2xl text-base leading-relaxed"
+                className="text-slate-600 max-w-2xl text-sm sm:text-base leading-relaxed"
               >
                 We are looking for people who bring strong skills, curiosity and
                 a willingness to solve problems in a fast-moving
@@ -100,7 +100,7 @@ export function JoinTheTeamSection() {
         </div>
       </section>
 
-       <section className="relative w-full bg-gradient-to-br from-[#4d808c] to-[#556795] overflow-hidden">
+       <section className="relative w-full bg-linear-to-br from-[#4d808c] to-[#556795] overflow-hidden">
         <div
           className="absolute inset-0 opacity-10 pointer-events-none"
           style={{
@@ -128,7 +128,7 @@ export function JoinTheTeamSection() {
             <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
               No Open Positions Right Now
             </h3>
-            <p className="text-white/85 text-base leading-relaxed mb-8 max-w-xl mx-auto">
+            <p className="text-white/85 text-sm sm:text-base leading-relaxed mb-8 max-w-xl mx-auto">
               We don&apos;t have any open positions at the moment, but
               we&apos;re always interested in meeting talented people. Send us
               your CV and we&apos;ll keep your details in mind for future

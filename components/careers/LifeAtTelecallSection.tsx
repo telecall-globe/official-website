@@ -46,7 +46,7 @@ export function LifeAtTelecallSection() {
 
             <motion.div
               variants={fadeUp}
-              className="space-y-5 text-slate-600 text-base sm:text-lg leading-relaxed"
+              className="space-y-5 text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed"
             >
               <p>
                 Telecommunications depends on more than the networks people see

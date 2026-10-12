@@ -53,7 +53,7 @@ export function CTASection({
 
             <motion.p
               variants={fadeUp}
-              className="text-white/80 text-base md:text-lg mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed"
+              className="text-white/80 text-sm sm:text-base md:text-lg mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed"
             >
               {description}
             </motion.p>
