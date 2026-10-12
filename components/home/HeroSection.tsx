@@ -32,7 +32,7 @@ export function HeroSection() {
 
   return (
     <section className="relative w-full bg-linear-to-br from-[#3B5B78] to-[#2B3A67] bg-[url('/img/hero-background.png')] bg-cover bg-center bg-blend-overlay text-white overflow-hidden">
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-24 lg:pt-8 lg:pb-32 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24 lg:pt-8 lg:pb-32 grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-12 items-center">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -56,7 +56,7 @@ export function HeroSection() {
           <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
             <Link
               href="/services"
-              className="cursor-pointer group bg-white text-[#2B3A67] px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition-all duration-300 flex items-center gap-2"
+              className="cursor-pointer group bg-white text-[#2B3A67] px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base rounded-md font-medium hover:bg-gray-100 transition-all duration-300 flex items-center gap-2"
             >
               Explore Our Services
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -64,7 +64,7 @@ export function HeroSection() {
 
             <Link
               href="/contact"
-              className="cursor-pointer border border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white/10 transition-all duration-300 hover:scale-[1.02]"
+              className="cursor-pointer border border-white text-white px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base rounded-md font-medium hover:bg-white/10 transition-all duration-300 hover:scale-[1.02]"
             >
               Talk to our Team
             </Link>

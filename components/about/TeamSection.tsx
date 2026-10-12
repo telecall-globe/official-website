@@ -72,7 +72,7 @@ const teamData: TeamMember[] = [
     enablePopup: true,
   },
   {
-    name: "Caesar Anyabosi",
+    name: "Caesar Anyaebosi",
     role: "Legal and Regulatory",
     image: "/img/team/caesar.png",
     bio: "Caesar ensures Telecall's operations comply with Nigerian telecommunications laws, NDPA regulations, and all applicable regulatory frameworks.",

@@ -58,7 +58,7 @@ ${data.fullName}
               </span>
             </div>
 
-            <h2 className="max-w-md text-4xl font-semibold leading-[1.05] tracking-[-0.03em] text-slate-950 sm:text-[42px]">
+            <h2 className="max-w-md text-3xl md:text-4xl font-semibold leading-[1.05] tracking-[-0.03em] text-slate-950 sm:text-[42px]">
               Let&apos;s Talk About Your Connectivity Needs
             </h2>
 

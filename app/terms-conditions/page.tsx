@@ -174,10 +174,10 @@ export default function TermsPage() {
                 className="scroll-mt-24"
                 id={`section-${section.id}`}
               >
-                <h2 className="text-2xl font-bold text-slate-900 mb-6 border-b border-slate-100 pb-3">
+                <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-slate-900 mb-4 md:mb-6 border-b border-slate-100 pb-3">
                   {section.title}
                 </h2>
-                <div className="space-y-4 text-slate-600 leading-relaxed">
+                <div className="text-[14px] md:text-base space-y-4 text-slate-600 leading-relaxed">
                   {section.content.map((paragraph, index) => (
                     <p
                       key={index}

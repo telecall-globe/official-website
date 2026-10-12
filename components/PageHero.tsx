@@ -21,7 +21,7 @@ export function PageHero({
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
         >
           {title}
         </motion.h1>
@@ -30,7 +30,7 @@ export function PageHero({
             initial="hidden"
             animate="visible"
             variants={fadeUp}
-            className="text-lg text-gray-200 max-w-2xl mx-auto"
+            className="text-base sm:text-lg text-gray-200 max-w-2xl mx-auto"
           >
             {subtitle}
           </motion.p>
