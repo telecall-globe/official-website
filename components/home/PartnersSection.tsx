@@ -9,7 +9,7 @@ const fadeUp: Variants = {
 };
 
 const row1Logos = [
-  { name: "MTN", src: "/img/partners/MTN-Logo.svg" },
+  { name: "MTN", src: "/img/partners/mtn.png" },
   { name: "Glo", src: "/img/partners/Globacom-Limited-Logo.svg" },
   { name: "Airtel", src: "/img/partners/Airtel-Nigeria-Logo.svg" },
   {
@@ -63,7 +63,7 @@ const row3Logos = [
   { name: "IntarVAS", src: "/img/partners/INTARVASCOMMUNICATIONS.svg" },
 
   { name: "Swift", src: "/img/partners/SWIFT TELEPHONE NETWORK LIMITED .png" },
-  { name: "Briclinks", src: "/img/partners/BRICLINKSAFRICAPLC.png" },
+  // { name: "Briclinks", src: "/img/partners/BRICLINKSAFRICAPLC.png" },
 ];
 
 const MarqueeRow = ({
