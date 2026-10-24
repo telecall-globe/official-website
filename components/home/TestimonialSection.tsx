@@ -27,40 +27,40 @@ const slideVariants = {
 const testimonialsData = [
   {
     quote:
-      "Telecall has helped us simplify our interconnect operations and maintain reliable traffic routes across our network.",
-    name: "Michael Adeyemi",
-    role: "HOD Network Operations, ApexTel",
+      "Telecall Globe Communications Limited have been our partner over the years now and they are committed to accurate traffic reconciliation, timely settlements, operational efficiency, and responsive support which has contributed significantly to the smooth running of our interconnect operations.",
+    name: "Lekan",
+    role: "HOD Voice Operations, Cedarview Communications",
   },
-  {
-    quote:
-      "Their centralized billing and settlement process has drastically reduced our reconciliation time. A truly reliable partner.",
-    name: "Chioma Okafor",
-    role: "Finance Director, ConnectWave",
-  },
-  {
-    quote:
-      "We needed a seamless interconnection point to expand our VAS offerings, and Telecall delivered beyond our expectations.",
-    name: "Ibrahim Musa",
-    role: "CEO, GlobalCom Solutions",
-  },
-  {
-    quote:
-      "The flexibility in their interconnection services allows us to route both voice and data traffic without any hitches.",
-    name: "Funke Akindele",
-    role: "CTO, LinkUp Telecom",
-  },
-  {
-    quote:
-      "Their technical team is incredibly responsive. Dispute resolution that used to take weeks now happens in days.",
-    name: "David Okon",
-    role: "Operations Manager, SwiftNet",
-  },
-  {
-    quote:
-      "Telecall's infrastructure has provided the stability we needed for international data termination. Highly recommended.",
-    name: "Aisha Bello",
-    role: "Head of Wholesale, NextGen Telecom",
-  },
+  // {
+  //   quote:
+  //     "Their centralized billing and settlement process has drastically reduced our reconciliation time. A truly reliable partner.",
+  //   name: "Chioma Okafor",
+  //   role: "Finance Director, ConnectWave",
+  // },
+  // {
+  //   quote:
+  //     "We needed a seamless interconnection point to expand our VAS offerings, and Telecall delivered beyond our expectations.",
+  //   name: "Ibrahim Musa",
+  //   role: "CEO, GlobalCom Solutions",
+  // },
+  // {
+  //   quote:
+  //     "The flexibility in their interconnection services allows us to route both voice and data traffic without any hitches.",
+  //   name: "Funke Akindele",
+  //   role: "CTO, LinkUp Telecom",
+  // },
+  // {
+  //   quote:
+  //     "Their technical team is incredibly responsive. Dispute resolution that used to take weeks now happens in days.",
+  //   name: "David Okon",
+  //   role: "Operations Manager, SwiftNet",
+  // },
+  // {
+  //   quote:
+  //     "Telecall's infrastructure has provided the stability we needed for international data termination. Highly recommended.",
+  //   name: "Aisha Bello",
+  //   role: "Head of Wholesale, NextGen Telecom",
+  // },
 ];
 
 export function TestimonialSection() {
@@ -140,7 +140,7 @@ export function TestimonialSection() {
             >
               <Quote className="w-8 h-8 mx-auto mb-6 opacity-30 text-white" />
 
-              <blockquote className="text-2xl md:text-3xl font-medium leading-snug mb-8 max-w-3xl">
+              <blockquote className="text-xl md:text-2xl font-medium leading-snug mb-8 max-w-3xl">
                 &quot;{currentTestimonial.quote}&quot;
               </blockquote>
 
