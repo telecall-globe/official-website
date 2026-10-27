@@ -201,7 +201,7 @@ const page = () => {
           description={
             <>
               <p>
-                Telecall&apos;s VAS Aggregation offering is positioned to
+                Telecall&apos;s VAS offering is positioned to
                 support connectivity between value-added service providers and
                 telecommunications operator networks.
               </p>

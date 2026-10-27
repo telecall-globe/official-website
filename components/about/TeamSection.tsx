@@ -41,17 +41,17 @@ const managementData: TeamMember[] = [
     enablePopup: true,
   },
   {
-    name: "Helena-Isaac Ededho",
-    role: "Business Development Manager",
-    image: "/img/team/helena.png",
-    bio: "Helena leads our business development initiatives, forging strategic partnerships with operators and service providers across Nigeria to expand our network reach.",
-    enablePopup: true,
-  },
-  {
     name: "Nonso Uzoukwu",
     role: "Engineering Manager",
     image: "/img/team/nonso.png",
     bio: "Nonso heads our engineering team, ensuring our infrastructure remains robust, secure, and capable of handling high-volume traffic exchanges seamlessly.",
+    enablePopup: true,
+  },
+  {
+    name: "Helena-Isaac Ededho",
+    role: "Business Development Manager",
+    image: "/img/team/helena.png",
+    bio: "Helena leads our business development initiatives, forging strategic partnerships with operators and service providers across Nigeria to expand our network reach.",
     enablePopup: true,
   },
 ];
@@ -62,21 +62,21 @@ const teamData: TeamMember[] = [
     role: "Accountant (Finance Department)",
     image: "/img/team/dare.png",
     bio: "Dare oversees financial reporting, reconciliations, and internal controls, ensuring Telecall's financial operations remain compliant and transparent.",
-    enablePopup: true,
+    enablePopup: false,
   },
   {
     name: "Chidi Nweke",
     role: "Analyst (Billing Department)",
     image: "/img/team/chidi.png",
     bio: "Chidi analyzes billing data and traffic records, identifying discrepancies and ensuring accurate reconciliation for our operator partners.",
-    enablePopup: true,
+    enablePopup: false,
   },
   {
     name: "Caesar Anyaebosi",
     role: "Legal and Regulatory",
     image: "/img/team/caesar.png",
     bio: "Caesar ensures Telecall's operations comply with Nigerian telecommunications laws, NDPA regulations, and all applicable regulatory frameworks.",
-    enablePopup: true,
+    enablePopup: false,
   },
 ];
 
@@ -87,14 +87,18 @@ function TeamMemberCard({ member }: { member: TeamMember }) {
     <>
       <motion.div
         variants={fadeUp}
-        className="group flex flex-col bg-[#F4FFFC] rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xs"
+        className="group flex flex-col bg-[#F4FFFC] rounded-2xl overflow-hidden transition-all duration-300 border border-[#636363]/10 hover:shadow-xs"
       >
         <div className="relative w-full aspect-4/5 bg-slate-100 overflow-hidden">
           <Image
             src={member.image}
             alt={member.name}
             fill
-            className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+            loading="eager"
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            priority
+            quality={75}
+            className="w-10 h-20 object-cover object-top transition-transform duration-500 group-hover:scale-105"
           />
         </div>
 
@@ -141,13 +145,17 @@ function TeamMemberCard({ member }: { member: TeamMember }) {
                 <X className="w-5 h-5" />
               </button>
 
-              <div className="flex flex-col sm:flex-row">
+              <div className="flex flex-col sm:flex-row shadow-xs">
                 <div className="relative w-full sm:w-2/5 aspect-square sm:aspect-auto sm:h-auto bg-slate-100 shrink-0">
                   <Image
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-cover object-top"
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                    priority
+                    quality={75}
+                    loading="eager"
+                    className="w-10 h-20 object-cover object-top"
                   />
                 </div>
 
