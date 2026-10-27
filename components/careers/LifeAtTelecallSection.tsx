@@ -67,7 +67,7 @@ export function LifeAtTelecallSection() {
             className="order-1 lg:order-2 relative w-full aspect-4/3 rounded-2xl overflow-hidden bg-slate-100 shadow-sm"
           >
             <Image
-              src="/img/career.jpg" 
+              src="/img/career1.jpg" 
               alt="Telecall Globe team members collaborating on site"
               fill
               className="object-cover object-center"

@@ -41,10 +41,11 @@ export function TrustedPartnerSection() {
           >
             <div className="relative w-full h-full rounded-xl overflow-hidden">
               <Image
-                src="/img/team/about-us-hero-img.jpg"
+                // src="/img/team/about-us-hero-img.jpg"
+                src="/img/team/team-collaboration3.jpg"
                 alt="Telecall Globe Team"
                 fill
-                className="object-cover object-center transition-transform duration-700 hover:scale-105"
+                className="object-[center_20%]  object-cover transition-transform duration-700 hover:scale-105"
                 priority
               />
             </div>

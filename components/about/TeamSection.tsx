@@ -58,7 +58,7 @@ const managementData: TeamMember[] = [
     name: "Helena-Isaac Ededho",
     role: "Business Development Manager",
     image: "/img/team/helena.png",
-    bio: "Helena leads our business development initiatives, forging strategic partnerships with operators and service providers across Nigeria to expand our network reach.",
+    bio: "Helena leads our business development initiatives, forging strategic partnerships with operators and service providers across Nigeria and our carrier partners to expand our network reach.",
     enablePopup: true,
   },
 ];
@@ -73,7 +73,7 @@ const teamData: TeamMember[] = [
   },
   {
     name: "Chidi Nweke",
-    role: "Analyst (Billing Department)",
+    role: "Analyst (Billing Operations)",
     image: "/img/team/chidi.png",
     bio: "Chidi analyzes billing data and traffic records, identifying discrepancies and ensuring accurate reconciliation for our operator partners.",
     enablePopup: false,

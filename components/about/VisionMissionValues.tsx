@@ -27,7 +27,7 @@ const coreValues = [
   {
     title: "Reliability & Resilient",
     description:
-      "With redundant POI's in Lagos, and Kano linked, Asaba and Portharcourt, linked by a fibre ring, we guarantee quality uptime. A call must never fail because of us.",
+      "With redundant POI's in Lagos, and Kano linked, linked by a fibre ring, we guarantee quality uptime. A call must never fail because of us.",
   },
   {
     title: "Quality of Service",
@@ -47,7 +47,7 @@ const coreValues = [
   {
     title: "Neutrality",
     description:
-      "We are carrier neutral. We don't compete with the MNO's, we serve all equally. Be it the MNO's, small operators and the international carriers.",
+      "We are carrier neutral. We don't compete with the MNO's, we serve all equally. Be it the MNO's, PNL licenses and the international carriers.",
   },
 ];
 
