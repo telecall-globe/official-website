@@ -35,7 +35,7 @@ const managementData: TeamMember[] = [
   },
   {
     name: "Sefinat Ayegun",
-    role: "Senior Billing Manager",
+    role: "Senior Manager, Billing Operations",
     image: "/img/team/sefinat.png",
     bio: "Sefinat manages the centralized billing and settlement systems, ensuring accuracy, efficiency, and timely resolution of all interconnect billing transactions.",
     enablePopup: true,

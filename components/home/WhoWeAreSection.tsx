@@ -53,7 +53,7 @@ export function WhoWeAreSection() {
               </p>
               <p>
                 We are a Carrier&apos;s Carrier. We do not compete for
-                subscribers with MTN, Airtel, Glo, or 2@mobile. Our clients are
+                subscribers with MTN, Airtel, Glo, or T2mobile. Our clients are
                 the operators. We provide wholesale infrastructure and services
                 that make their business more profitable and efficient.
               </p>
