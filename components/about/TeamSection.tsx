@@ -27,6 +27,13 @@ interface TeamMember {
 
 const managementData: TeamMember[] = [
   {
+    name: "Sa'adat Mohammed",
+    role: "Managing Director",
+    image: "/img/team/saadat.png",
+    bio: "Sa’adat holds an LL.B. in Civil Law from Ahmadu Bello University, Zaria, and a B.L. from the Nigerian Law School, Lagos. Called to the Nigerian Bar in 1993, she brings extensive experience in law, banking, and corporate leadership. She spent 24 years in banking, serving at Habib Nigeria Bank, Bank PHB, and Keystone Bank Limited, where she rose to Regional Manager (North West), before joining Althani Group of Companies Limited. Her experience and strategic leadership support organisational growth and operational excellence.",
+    enablePopup: true,
+  },
+  {
     name: "Ali Musa",
     role: "General Manager",
     image: "/img/team/alimusa.png",
@@ -203,10 +210,21 @@ export function TeamSection() {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={staggerContainer}
-            className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto"
+            className="grid grid-cols-1 sm:grid-cols-6 gap-6 max-w-5xl mx-auto"
           >
             {managementData.map((member, index) => (
-              <TeamMemberCard key={index} member={member} />
+              <div
+                key={index}
+                className={`sm:col-span-2 ${
+                  index === 3
+                    ? "sm:col-start-2"
+                    : index === 4
+                      ? "sm:col-start-4"
+                      : ""
+                }`}
+              >
+                <TeamMemberCard member={member} />
+              </div>
             ))}
           </motion.div>
         </div>
